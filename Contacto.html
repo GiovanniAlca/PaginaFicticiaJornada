@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__elementos">
+            <a href="index.html" class="encabezado__elementos--logo">
+            <img class="encabezado__logo" src="img/logoprovisriablanca-1@2x.png" alt="Logo">
+            </a>
+            <div class="encabezado__hamburguesa" onclick="toggleMenu()">☰</div>
+            <nav class="encabezado__navegacion">
+                <ul class="encabezado__menu">
+                    <li><a class="encabezado__elementos--opcion" href="blogspot.html">Blog</a></li>
+                    <li><a class="encabezado__elementos--opcion" href="PaquetesViaje.html">Paquetes de viaje</a></li>
+                    <li><a class="encabezado__elementos--opcion" href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner">
+            <img src="img/Contacto/Banner Contato.png" alt="">
+            <div class="banner_contenido">
+                <h1 class="banner__titulo">¡Ponte en contacto!</h1>
+                <hr class="banner__subrayado" aria-hidden="true">
+                <p class="banner__parrafo">¿Dudas, sugerencias, problemas por resolver? ¡Tenemos un equipo de guardia para ayudarte!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <div class="formulario_encabezado">
+            <h2>Rellena el formulario:</h2>
+            <hr class="formulario_subrayado" aria-hidden="true">
+            <p>Tenemos un equipo siempre listo para resolver tus dudas, problemas, ofrecerte consejos y orientaciones objetivas para hacer tu experiencia lo más placentera y tranquila posible. Completa tus datos y te contactaremos según la urgencia de tu solicitud. ¡Puedes confiar en nosotros!</p>
+        </div>
+        <div class="formulario_cuerpo">
+            <form class="formulario_contenedor" action="#">
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                <div class="formulario_telefono_correo">
+                    <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                    <input type="email" name="correo" id="correo" placeholder="Correo">
+                </div>
+                <input type="text" name="tema" id="tema" placeholder="Tema"> <br>
+
+                <label class="tema2" for="tema2">Tema</label>
+                <textarea name="tema2" id="tema2" cols="30" rows="10"></textarea><br>
+
+                <input type="button" value="Enviar!">
+            </form>
+        </div>
+    </section>
+
+    <section class="banner_footer">
+        <img src="img/Contacto/Imagem pré rodapé.png" alt="">
+    </section>
+
+    <footer class="footer__container">
+        <div class="footer">
+            <div class="footer__izquierdo">
+                <img class="footer__logo" src="img/logoprovisriablanca-1@2x.png" alt="Logo de Jornada">
+                <p>Horario de atendimiento: 08h - 20h (Lunes a Sábado)</p>
+                <p>Desarrollado por Alura Latam. Proyecto fictício sin fines comerciales.</p>
+            </div>
+            <div class="footer__derecho">
+                <p>Accede a nuestras redes sociales:</p>
+                <div class="footer__redes">
+                    <a href="#"><img src="img/whatsapp-1.svg" alt="logo de whatsapp"></a>
+                    <a href="#"><img src="img/instragam-1.svg" alt="logo de instagram"></a>
+                    <a href="#"><img src="img/twiter-1.svg" alt="Logo de twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

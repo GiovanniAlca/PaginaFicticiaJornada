@@ -1,0 +1,485 @@
+.encabezado{
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado__elementos{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__navegacion{
+    display: flex;
+}
+
+.encabezado__elementos--lista{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.encabezado__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.encabezado__elementos--logo img{
+    max-width: 260px;
+}
+
+.encabezado__elementos--opcion{
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    margin: 0%;
+    justify-content: start;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+
+.banner__texto{
+    position: absolute;
+    flex-direction: column;
+    color: white;
+    max-width: 500px;
+    margin: 0 13% 0 13%;
+}
+
+.banner__texto--titulo{
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner__texto--subrayado{
+    width: 200px;
+    height: 3px;
+    background: var(--rojo);
+    border: none;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+.banner__texto--parrafo{
+    font-size: 20px;
+}
+
+.Tokyo__subrayado{
+    width: 200px;
+    height: 3px;
+    background: var(--rojo);
+    border: none;
+    justify-content: flex-start;
+}
+
+.Tokyo{
+    margin: 5%;
+}
+
+.Tokyo__encabezado{
+    margin: 6%;
+}
+
+.Tokyo__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.Tokyo__Llegada{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 11% 0 11%;
+}
+
+.Tokyo__Llegada--titulo{
+    margin: 0;
+}
+
+
+
+.Tokyo__Llegada img{
+    max-width: 600px;
+}
+
+.Acomodaciones{
+    margin: 0 15% 0 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.Acomodaciones img{
+    max-width: 1200px;
+}
+
+.Acomodaciones_descripcion{
+    margin: 0;
+}
+
+.Explorando{
+    margin: 5% 15% 0 15%;
+}
+
+.Compras,
+.Gastronomia,
+.Concluyendo {
+    margin: 3% 15% 0 15%;
+}
+
+.Publicaciones{
+    margin: 5% 0%;
+}
+
+.Publicaciones__subrayado{
+    width: 200px;
+    height: 3px;
+    background: var(--rojo);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.Publicaciones__encabezado{
+    margin: 3%;
+}
+
+.Publicaciones__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.Publicaciones__tarjetas {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.tarjeta__osaka,
+.tarjeta__hiroshima,
+.tarjeta__kyoto {
+    flex-direction: column;
+    max-width: 330px;
+    width: 100%; /* Permite que la tarjeta ocupe el 100% de su espacio en dispositivos pequeños */
+}
+
+
+.tarjeta__osaka img,
+.tarjeta__hiroshima img,
+.tarjeta__kyoto img{
+    max-width: 330px;
+}
+
+.tarjeta__osaka a,
+.tarjeta__hiroshima a,
+.tarjeta__kyoto a {
+    background-color: #B81515;
+    padding: 15px 30px; 
+    color: white;
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.tarjeta__osaka a:hover,
+.tarjeta__hiroshima a:hover,
+.tarjeta__kyoto a:hover {
+    background-color: #8c1010; 
+}
+
+
+.tarjeta__osaka a:active,
+.tarjeta__hiroshima a:active,
+.tarjeta__kyoto a:active {
+    background-color: #6a0d0d; 
+}
+
+.footer__container{
+    background-color: var(--negro);
+    margin: 0;
+    width: 100%;
+}
+
+.footer{
+    margin: 0;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__izquierdo{
+    margin: 3%;
+}
+
+.footer__logo{
+    width: 180px;
+}
+
+.footer__derecho{
+    margin: 3%;
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .encabezado__elementos{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 1200px;
+        padding: 0% 10% 0% 10%;
+    }
+    
+    .encabezado__menu{
+        flex-direction: row;
+        display: flex; /* Oculta el menú por defecto */
+        gap: 40px;
+    }
+
+    
+
+    .encabezado__logo{
+        content: url(../img/Logo-provisória-branca\ 1.png);
+    }
+    
+    
+
+    .encabezado__elementos--opcion{
+        justify-content: end;
+        display: flex;
+    }
+
+    .banner__img{
+        content: url(../img/blogspot_img/Frame\ 3.png);
+    }
+
+    .banner__texto{
+        max-width: 600px;
+    }
+
+    .banner__texto--titulo{
+        font-size: 50px;
+    }
+
+    .banner__texto--parrafo{
+        font-size: 25px;
+    }
+
+    .Tokyo__titulo{
+        font-size: 35px;
+    }
+
+    .Tokyo__Llegada{
+        font-size: 20px;
+    }
+    
+    .Tokyo__Llegada--titulo{
+        flex: 1;
+    }
+
+    .banner__texto--parrafo{
+        font-size: 40px;
+    }
+    
+    .Tokyo__Llegada img{
+        width: 50%;
+    }
+
+    .Acomodaciones__texto h2,
+    .Explorando h2,
+    .Compras h2,
+    .Gastronomia h2,
+    .Concluyendo h2{
+        font-size: 30px;
+    }
+    
+    .Acomodaciones__texto p,
+    .Explorando p,
+    .Compras p,
+    .Gastronomia p,
+    .Concluyendo p{
+        font-size: 20px;
+    }
+
+    .Acomodaciones__img{
+        height: 250px;
+    }
+
+    .Publicaciones{
+        margin: 10% 15%;
+    }
+
+    .Publicaciones__titulo{
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .Publicaciones__tarjetas{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .tarjeta__osaka, 
+    .tarjeta__hiroshima, 
+    .tarjeta__kyoto {
+        max-width: max-content;
+        display: flex;
+    }
+    
+    .tarjeta__osaka img{
+        content: url(../img/blogspot_img/Osaka_tablet.png);
+        max-width: 100%;
+    }
+
+    .tarjeta__hiroshima img{
+        max-width: 100%;
+        content: url(../img/blogspot_img/Hiroshima_tablet.png);
+    }
+
+    .tarjeta__kyoto img{
+        max-width: 100%;
+        content: url(../img/blogspot_img/Kyoto_tablet.png);
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .encabezado {
+        position: relative;
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    .encabezado__elementos {
+        display: flex;
+        justify-content: space-between; /* Separa el logo y la hamburguesa */
+        align-items: center;
+        width: 100%;
+        padding: 0% 10% 0% 10%;
+    }
+    
+    .encabezado__elementos--logo img {
+        content: url(../img/Logo-provisória-branca\ 1.png);
+    }
+    
+    .encabezado__hamburguesa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--blanco);
+        margin-left: auto;
+    }
+    
+    .encabezado__menu {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--negro);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .encabezado__menu--activo {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+    
+    .encabezado__navegacion--elemento {
+        text-align: center; /* Centra los elementos del menú */
+        padding: 10px 0; /* Espaciado para cada elemento */
+        margin: 0;
+        justify-content: center;
+    }
+    
+
+    .banner__img{
+        content: url(../img/blogspot_img/Banner_movil.png);
+    }
+
+    .encabezado__elementos--opcion {
+        padding: 10px 0;
+        text-align: center;
+        color: var(--blanco);
+    }
+
+    .Tokyo__Llegada{
+        flex-direction: column;
+    }
+
+    .Tokyo__Llegada img{
+        width: 100%;
+        height: 350px;
+    }
+
+    .Acomodaciones__img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 250px;
+        display: block;
+    }
+
+    .Publicaciones__tarjetas{
+        flex-direction: column;
+    }
+
+    .Publicaciones__encabezado{
+        margin: 3% 15% 0 15%;
+        text-align: center;
+    }
+
+    .tarjeta__osaka img, 
+    .tarjeta__hiroshima img, 
+    .tarjeta__kyoto img {
+        max-width: 100%;
+    }
+
+    .tarjeta__osaka, 
+    .tarjeta__hiroshima, 
+    .tarjeta__kyoto {
+        max-width: max-content;
+        display: flex;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}

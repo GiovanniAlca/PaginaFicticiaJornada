@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.encabezado{
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado__elementos{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__navegacion{
+    display: flex;
+}
+
+.encabezado__elementos--lista{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.encabezado__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.encabezado__elementos--logo img{
+    max-width: 260px;
+}
+
+.encabezado__elementos--opcion{
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.banner_contenido{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 13% 0 13%;
+    color: var(--blanco);
+}
+
+.banner__titulo{
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner__subrayado{
+    color: red;
+    max-width: 150px;
+    height: 3px;
+    background-color: red;
+    margin: 5% 0%;
+    border: none;
+}
+
+.banner__parrafo{
+    font-size: 20px;
+}
+
+.destinos{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.destinos__encabezado,
+.testimonios_encabezado{
+    text-align: center;
+    margin: 5% 5%;
+}
+
+.destinos__subrayado,
+.pago_subrayado,
+.testimonios_subrayado{
+    max-width: 150px;
+    background-color: red;
+    height: 3px;
+    border: none;
+}
+
+.destinos_opciones{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 100%;
+    margin: 5% 15%;
+}
+
+.destinos__tokyo{
+    flex-direction: column;
+    display: flex;
+    width: auto;
+    max-width: 49%;
+}
+
+.destinos__osaka{
+    flex-direction: column;
+    display: flex;
+    width: auto;
+    max-width: 49%;
+}
+
+.destinos__botones{
+    text-decoration: none;
+    background-color: #B81515;
+    color: white;
+    padding: 3%;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+
+
+.pago_encabezado{
+    margin: 5% 15%;
+    text-align: center;
+}
+
+.pago_cuerpo{
+    flex-direction: row;
+    display: flex;
+    margin: 5% 15%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.pago_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 5%;
+    flex: 0.3;
+}
+
+.pago_texto h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.pago_imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    flex: 1;
+}
+
+.pago_imagenes img{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.pago_imagenes_1,
+.pago_imagenes_2{
+    width: 48%;
+}
+
+.testimonios_cuerpo{
+    flex-direction: row;
+    display: flex;
+    margin: 5% 15%;
+}
+
+.testimonio_uno,
+.testimonio_dos,
+.testimonio_tres{
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    flex-direction: column;
+}
+
+.testimonio_uno_perfil,
+.testimonio_dos_perfil,
+.testimonio_tres_perfil{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.banner_footer{
+    max-width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.banner_footer img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer__container{
+    background-color: var(--negro);
+    margin: 0;
+    width: 100%;
+}
+
+.footer{
+    margin: 0;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__izquierdo{
+    margin: 3%;
+}
+
+.footer__logo{
+    width: 180px;
+}
+
+.footer__derecho{
+    margin: 3%;
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .encabezado__elementos{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 1200px;
+        padding: 0% 10% 0% 10%;
+    }
+    
+    .encabezado__menu{
+        flex-direction: row;
+        display: flex; /* Oculta el menú por defecto */
+        gap: 40px;
+    }
+
+    
+
+    .encabezado__logo{
+        content: url(../img/Logo-provisória-branca\ 1.png);
+    }
+    
+    
+
+    .encabezado__elementos--opcion{
+        justify-content: end;
+        display: flex;
+    }
+
+    .banner img{
+        content: url(../img/PaqueteViaje/Banner\ Japão\ \(1\).png);
+    }
+
+    .banner_contenido {
+        max-width: 700px;
+    }
+
+    .banner_contenido h1{
+        font-size: 60px;
+    }
+
+    .banner_contenido p{
+        font-size: 30px;
+    }
+    
+    .destinos_opciones{
+        flex-direction: column;
+    }
+
+    .destinos__tokyo,
+    .destinos__osaka{
+        max-width: 100%;
+    }
+
+    .pago_cuerpo {
+        flex-direction: column;
+        display: flex;
+        align-items: center; /* Alinea las imágenes al centro */
+    }
+
+    .pago_imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .testimonios_cuerpo{
+        flex-direction: column;
+    }
+
+    .footer{
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .encabezado {
+        position: relative;
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    .encabezado__elementos {
+        display: flex;
+        justify-content: space-between; /* Separa el logo y la hamburguesa */
+        align-items: center;
+        width: 100%;
+        padding: 0% 10% 0% 10%;
+    }
+    
+    .encabezado__elementos--logo img {
+        content: url(../img/Logo-provisória-branca\ 1.png);
+    }
+    
+    .encabezado__hamburguesa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--blanco);
+        margin-left: auto;
+    }
+    
+    .encabezado__menu {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--negro);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .encabezado__menu--activo {
+        display: flex; /* Muestra el menú cuando está activo */
+        margin: 0;
+    }
+    
+    .encabezado__navegacion--elemento {
+        text-align: center; /* Centra los elementos del menú */
+        padding: 10px 0; /* Espaciado para cada elemento */
+        margin: 0;
+        justify-content: center;
+    }
+
+    .banner img{
+        content: url(../img/PaqueteViaje/Frame\ 5.png);
+    }
+
+    .destinos_opciones{
+        flex-direction: column;
+    }
+
+    .destinos__tokyo,
+    .destinos__osaka{
+        max-width: 100%;
+    }
+
+    .pago_cuerpo{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .pago_imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .pago_imagenes img{
+        max-width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .pago_imagenes_1,
+    .pago_imagenes_2{
+        width: 46%;
+    }
+
+    .testimonios_cuerpo{
+        flex-direction: column;
+    }
+
+    .banner_footer img{
+        content: url(../img/PaqueteViaje/Imagem\ pré\ rodapé\ 1.png);
+    }
+}

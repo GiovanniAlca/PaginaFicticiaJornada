@@ -1,0 +1,700 @@
+.encabezado__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__menu{
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+}
+
+.encabezado__logo--icono {
+    max-width: 260px;
+}
+
+.encabezado__navegacion {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.encabezado__navegacion--lista{
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+
+}
+
+.encabezado__navegacion--elemento {
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner__espacio{
+    margin: 0%;
+}
+
+.banner__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner__descripcion {
+    max-width: 1200px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ofertas {
+    margin-bottom: 112px;
+}
+
+.testimonios__titulo,
+.pago__titulo,
+.destinos__titulo,
+.busca__titulo,
+.ofertas__titulo {
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.testimonios__titulo--subrayado,
+.pago__titulo--subrayado,
+.destinos__titulo--subrayado,
+.busca__titulo--subrayado,
+.ofertas__titulo--subrayado {
+    width: 180px;
+    height: 4px;
+    background: var(--rojo);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ofertas__cards--grupo {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ofertas__cards--elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
+    color: var(--blanco);
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ofertas__card--boton{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.ofertas__cards--japon {
+    background-image: url("../img/tokyo.png");
+}
+
+.ofertas__cards--san-andreas {
+    background-image: url("../img/san-andreas.png");
+}
+
+
+
+.ofertas__card--destino-tipo {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.ofertas__card--destino-nombre {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+ 
+}
+
+.ofertas__card--precio {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+
+}
+
+.destinos__elemento--boton,
+.ofertas__card--boton {
+    border-radius: 8px;
+    background: var(--rojo, #B81515);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #F5F5F5;
+}
+
+.destinos__elemento--boton-texto,
+.ofertas__card--boton-texto {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--blanco, #FFF);
+}
+
+.busca__categorias {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.busca__categoria {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--gris-claro, #F5F5F5);
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.material-symbols-outlined {
+    color: var(--gris-oscuro, #8C8C8C);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destinos__lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.destinos__elemento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destinos__elemento--image {
+    max-width: 100%;
+}
+
+.destinos__elemento--nombre {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.destinos__elemento--descripcion {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.pago {
+    margin-bottom: 112px;
+}
+
+.pago__imagenes--grupo,
+.pago__condiciones {
+    display: flex;
+    gap: 24px;
+}
+
+.pago__condiciones--destaque {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.pago__condiciones--detalles {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 384px;
+    max-width: 100%;
+}
+
+.pago__imagenes--imagen-container {
+    flex: 1;
+}
+
+.pago__imagenes--imagen-destaque {
+    margin-top: 20px;
+}
+
+.pago__imagenes--imagen {
+    max-width: 100%;
+}
+
+.testimonios {
+    margin-bottom: 112px;
+}
+
+.testimonios__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.testimonios__elemento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonios__texto {
+    color: var(--grafito, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.testimonios__autor {
+    margin-top: 12px;
+    display: flex;
+    gap: 24px;
+}
+
+.testimonios__autor--foto {
+    max-width: 86px;
+}
+
+.testimonios__autor--foto img {
+    border-radius: 50%; /* Hace que las fotos sean circulares */
+    width: 86px;
+    height: 86px;
+    object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin distorsión */
+    aspect-ratio: 1/1; /* Mantiene la proporción de la imagen cuadrada */
+}
+
+
+.testimonios__autor--nombre {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -4px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .encabezado__menu {
+        flex-direction: column;
+        display: none; /* Oculta el menú por defecto */
+        background-color: var(--negro);
+        position: absolute;
+        top: 100%; /* Asegúrate de que se muestre justo debajo del encabezado */
+        left: 0;
+        width: 100%; /* Para que ocupe todo el ancho */
+        z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+        max-height: 0; /* Comienza oculto */
+        opacity: 0; /* Comienza invisible */
+        transition: max-height 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+    }
+    
+    .encabezado {
+        position: relative; /* Asegúrate de que el contenedor padre tenga posición relativa */
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        padding: 0% 10% 0% 10%;
+    }
+    
+    .encabezado__logo--icono{
+        content: url(../img/Logo-provisória-branca\ 1.png);
+        width: 80px;
+    }
+
+    .encabezado__menu--activo {
+        display: flex; /* Muestra el menú cuando se activa */
+        max-height: 330px; /* Ajusta según el tamaño máximo esperado del menú */
+        opacity: 1; /* Vuelve a hacer visible el menú */
+        padding: 0% 10% 0% 10%;
+    }
+
+    .encabezado__navegacion--elemento {
+        text-align: center; /* Centra los elementos del menú */
+        padding: 10px 0; /* Espaciado para cada elemento */
+        display: flex;
+        margin: 0;
+        justify-content: end;
+    }
+
+    .encabezado__hamburguesa {
+        display: block; /* Muestra el botón hamburguesa en pantallas más pequeñas */
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--blanco);
+        margin-left: auto;
+    }
+
+    .banner__img{
+        content: url(../img/Frame\ 3.png);
+        width: 100%;
+    }
+
+    .banner__descripcion{
+        margin: 5% 10% 10% 10%;
+    }
+
+    .ofertas__titulo{
+        margin: 0;
+    }
+
+    .ofertas__cards{
+        margin: 3% 5% 10% 5%;
+        
+    }
+
+    .ofertas__card{
+        gap: 10px;
+    }
+
+    .ofertas__cards--grupo{
+        margin: 0;
+    }
+    
+    .ofertas__cards--elemento {
+        flex: 1;
+        max-width: 300px; /* Ajusta el ancho máximo de cada tarjeta */
+        margin: 10px;
+    }
+
+    .ofertas__cards--elemento {
+        max-width: 400px; /* Ajusta el ancho máximo */
+        max-height: 300px; /* Ajusta el alto máximo */
+        overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
+        margin: 10px;
+    }
+
+    .ofertas__card--destino-tipo{
+        font-size: 20px;
+    }
+
+    .ofertas__card--destino-nombre{
+        font-size: 40px;
+    }
+
+    .ofertas__card--precio{
+        font-size: 30px;
+    }
+
+    .ofertas__card--boton{
+        width: 280px;
+        font-size: 20px;
+    }
+
+    .busca__categorias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% 10% 10% 10%;
+    }
+
+    .busca__titulo{
+        margin: 0;
+    }
+
+    .busca__categoria{
+        margin: 1%;
+        height: 200px;
+    }
+
+    .destinos__titulo{
+        margin: 0% 10% 5% 10%;
+    }
+
+    .destinos__lista{
+        flex-direction: column;
+        margin: 0% 10% 0% 10%;
+        gap: 30px;
+    }
+
+    .pago__titulo{
+        margin: 10% 10% 5% 10%;
+    }
+
+    .pago__condiciones{
+        margin: 0% 10% 0% 10%;
+        flex-direction: column;
+    }
+
+    .testimonios__wrapper{
+        margin: 10%;
+        flex-direction: column;
+    }
+
+    .footer{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer__logo-icon{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .contenedor__logo{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    body {
+        max-width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    .encabezado__menu {
+        flex-direction: column;
+        display: none; /* Oculta el menú por defecto */
+        background-color: var(--negro);
+        position: absolute;
+        top: 100%; /* Asegúrate de que se muestre justo debajo del encabezado */
+        left: 0;
+        width: 100%; /* Para que ocupe todo el ancho */
+        z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+        max-height: 0; /* Comienza oculto */
+        opacity: 0; /* Comienza invisible */
+        transition: max-height 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+    }
+
+    .encabezado {
+        position: relative; /* Asegúrate de que el contenedor padre tenga posición relativa */
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        padding: 0% 10% 0% 10%;
+    }
+
+    .encabezado__logo--icono{
+        content: url(../img/Logo-provisória-branca\ 1.png);
+    }
+
+    .encabezado__hamburguesa {
+        display: block;
+        color: var(--blanco);
+        font-size: 25px;
+        margin-left: auto;
+    }
+
+    .encabezado__menu--activo {
+        display: flex; /* Muestra el menú cuando se activa */
+        max-height: 330px; /* Ajusta según el tamaño máximo esperado del menú */
+        opacity: 1; /* Vuelve a hacer visible el menú */
+        padding: 0% 10% 0% 10%;
+    }
+
+    .encabezado__navegacion{
+        display: flex;
+        justify-content: end;
+    }
+
+    .encabezado__elementos--opcion {
+        text-align: center; /* Centra los elementos del menú */
+        padding: 10px 0; /* Espaciado para cada elemento */
+        display: flex;
+        margin: 0;
+        justify-content: end;
+    }
+
+    .banner__img {
+        content: url(../img/Frame\ 3.png);
+    }
+
+    .banner__descripcion{
+        margin: 10%;
+        font-size: 30px;
+    }
+
+    .ofertas__cards--grupo{
+        margin: 10% 10% 10% 10%;
+        padding: 0;
+    }
+
+    /* Ajustar el tamaño de las tarjetas de ofertas */
+    .ofertas__cards--elemento {
+        width: 100%; /* Que ocupen el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .ofertas__card--boton{
+        width: 250px;
+    }
+
+    .ofertas__card--destino-nombre{
+        font-size: 40px;
+    }
+    
+    .busca__categorias{
+        display: flex;
+        flex-direction: columnç;
+        flex-wrap: wrap;
+        margin: 5% 10% 10% 10%;
+    }
+
+    .busca__categoria{
+        padding: 10%;
+    }
+
+    .destinos__lista{
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .pago__condiciones{
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .testimonios__wrapper{
+        margin: 10%;
+        flex-direction: column;
+    }
+
+    .footer{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+  

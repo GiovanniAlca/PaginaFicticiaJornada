@@ -190,6 +190,7 @@
     flex-direction: row;
     display: flex;
     margin: 5% 15%;
+    gap: 20px;
 }
 
 .testimonio_uno,
